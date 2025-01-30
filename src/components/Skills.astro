@@ -1,0 +1,42 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "../components/Badge.astro"
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+import Html from "../components/icons/Html.astro"
+import Css from "../components/icons/Css.astro"
+import MailIcon from "../components/icons/Mail.astro"
+import SocialPill from "../components/SocialPill.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import Figma from "./icons/Figma.astro"
+import Astrou from "./icons/Astrou.astro"
+import Cpp from "./icons/Cpp.astro"
+---
+
+<div class="max-w-xl">
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill>
+      <Cpp class="size-4" />
+      C++
+    </SocialPill>
+
+    <SocialPill>
+      <Html class="size-4" />
+      HTML
+    </SocialPill>
+
+    <SocialPill>
+      <Css class="size-4" />
+      CSS
+    </SocialPill>
+
+    <SocialPill>
+      <JavaScript class="size-4" />
+      JavaScript
+    </SocialPill>
+
+    <SocialPill>
+      <Figma class="size-4" />
+      Figma
+    </SocialPill>
+  </nav>
+</div>

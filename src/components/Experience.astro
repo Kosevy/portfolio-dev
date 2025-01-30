@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente",
+    title: "Estudiante Pregrado",
+    company: "Universidad Peruana de Ciencias Aplicadas",
+    description:
+      "Estudiante de pregrado cursando la carrera de Ingeniería de Software, empleo uso del lenguaje c++ para construir proyectos que puedan resolver problemas de la vida cotidiana y simular videojuegos en formularios (winforms).",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "2023",
+    title: "Website Developer",
+    company: "Autodidacta",
+    description:
+      "Diseño y desarrollo de páginas web utilizando figma - html - css - javascript con fines educativos en conjunto del uso de frameworks tales como astro y react.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
